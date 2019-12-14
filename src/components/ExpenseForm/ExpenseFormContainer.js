@@ -11,7 +11,4 @@ const mapDispatchToProps = dispatch => ({
   onSave: value => dispatch(plannerActions.addExpense(value)),
 });
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(ExpenseForm);
+export default connect(mapStateToProps, mapDispatchToProps)(ExpenseForm);

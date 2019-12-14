@@ -14,7 +14,4 @@ const mapDispatchToProps = dispatch => ({
   removeExpense: id => dispatch(plannerActions.removeExpense(id)),
 });
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
